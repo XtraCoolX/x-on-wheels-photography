@@ -252,3 +252,16 @@ footer {
     padding-top: 70px;
   }
 }
+
+
+.hero-photo-bg {
+  background:
+    linear-gradient(120deg, rgba(8,9,12,0.94), rgba(8,9,12,0.45)),
+    url("images/green-mclaren-sunset.jpg") center / cover no-repeat;
+}
+
+img.photo {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
