@@ -3,81 +3,137 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>X on Wheels | Automotive Photography</title>
-  <meta name="description" content="X on Wheels automotive photography prints, wallpapers and car event galleries by Xavier Munce." />
+  <title>X on Wheels | Sydney Automotive Photography</title>
+  <meta name="description" content="X on Wheels is a Sydney automotive photography portfolio featuring supercars, JDM, classics, motorsport and detail shots." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header hero-photo-bg">
+  <header class="hero" id="top">
     <nav class="nav">
-      <a class="logo" href="#">X<span>ON</span>WHEELS</a>
+      <a class="logo" href="#top">X<span>ON</span>WHEELS</a>
       <div class="nav-links">
+        <a href="#featured">Featured</a>
         <a href="#gallery">Gallery</a>
         <a href="#shop">Shop</a>
-        <a href="#about">About</a>
         <a href="#contact">Contact</a>
+        <a class="instagram-link" href="https://www.instagram.com/x_on_wheels/" target="_blank" rel="noopener">Instagram</a>
       </div>
     </nav>
 
-    <section class="hero">
+    <section class="hero-content">
       <p class="eyebrow">Sydney Automotive Photography</p>
-      <h1>Car shots made for wallpapers, prints and posters.</h1>
-      <p class="hero-text">
-        High-contrast automotive photography from meets, events and street spots.
-        Browse the gallery or request a private shoot.
-      </p>
+      <h1>Capturing car culture in motion.</h1>
+      <p>Supercars, JDM, classics, motorsport and automotive details — shot through the lens of X on Wheels.</p>
       <div class="hero-actions">
-        <a class="button primary" href="#gallery">View Gallery</a>
-        <a class="button secondary" href="#shop">Buy Prints</a>
+        <a class="button primary" href="#gallery">Explore Gallery</a>
+        <a class="button secondary" href="#contact">Book a Shoot</a>
       </div>
     </section>
   </header>
 
   <main>
-    <section id="gallery" class="section">
+    <section id="featured" class="section">
+      <div class="section-heading">
+        <p class="eyebrow">Featured</p>
+        <h2>Standout shots</h2>
+      </div>
+
+      <div class="featured-grid">
+        <article class="feature-card big">
+          <img src="images/green-gt3rs-meet.jpg" alt="Green Porsche GT3 RS at a car meet">
+          <div><p class="eyebrow">Hero Shot</p><h3>Green GT3 RS</h3></div>
+        </article>
+        <article class="feature-card">
+          <img src="images/white-lexus-lfa.jpg" alt="White Lexus LFA front end">
+          <div><p class="eyebrow">JDM Icon</p><h3>Lexus LFA</h3></div>
+        </article>
+        <article class="feature-card">
+          <img src="images/aston-martin-vantage.jpg" alt="Aston Martin Vantage at a car meet">
+          <div><p class="eyebrow">Modern Supercar</p><h3>Aston Martin Vantage</h3></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery-section">
       <div class="section-heading">
         <p class="eyebrow">Gallery</p>
-        <h2>Featured shots</h2>
+        <h2>Portfolio</h2>
       </div>
 
       <div class="filters">
         <button class="filter active" data-filter="all">All</button>
-        <button class="filter" data-filter="supercar">Supercars</button>
+        <button class="filter" data-filter="supercars">Supercars</button>
         <button class="filter" data-filter="jdm">JDM</button>
-        <button class="filter" data-filter="european">European</button>
-        <button class="filter" data-filter="event">Events</button>
+        <button class="filter" data-filter="classics">Classics</button>
+        <button class="filter" data-filter="details">Details</button>
+        <button class="filter" data-filter="motorsport">Motorsport</button>
       </div>
 
       <div class="gallery-grid">
-        <article class="photo-card" data-category="supercar">
-          <img class="photo" src="images/green-mclaren-sunset.jpg" alt="Green McLaren Senna at sunset car meet">
-          <h3>Sunset Senna</h3>
-          <p>Green McLaren at golden hour, shot at a Sydney car event.</p>
-        </article>
-        <article class="photo-card" data-category="event">
-          <img class="photo" src="images/ferrari-gt3-track.jpg" alt="Red Ferrari GT race car moving on track">
-          <h3>Track Motion</h3>
-          <p>Ferrari GT car captured with motion blur on circuit.</p>
-        </article>
-        <article class="photo-card" data-category="supercar">
-          <img class="photo" src="images/carbon-detail-racing.jpg" alt="Carbon fibre racing detail close up">
-          <h3>Carbon Detail</h3>
-          <p>Close-up racing detail with carbon fibre texture and lighting.</p>
-        </article>
-        <article class="photo-card" data-category="supercar">
-          <div class="photo placeholder">NEXT</div>
-          <h3>Supercar Shot</h3>
-          <p>Add another Ferrari, McLaren or Lamborghini photo here.</p>
+        <article class="photo-card" data-category="supercars">
+          <img src="images/green-gt3rs-meet.jpg" alt="Green Porsche GT3 RS at a car meet">
+          <h3>Green GT3 RS</h3>
+          <p>Supercars</p>
         </article>
         <article class="photo-card" data-category="jdm">
-          <div class="photo placeholder">JDM</div>
-          <h3>JDM Feature</h3>
-          <p>Add an NSX, Supra, Skyline or other JDM shot here.</p>
+          <img src="images/white-lexus-lfa.jpg" alt="White Lexus LFA front end">
+          <h3>White LFA</h3>
+          <p>JDM</p>
         </article>
-        <article class="photo-card" data-category="european">
-          <div class="photo placeholder">EURO</div>
-          <h3>European Feature</h3>
-          <p>Add a Porsche, BMW, Mercedes or Audi shot here.</p>
+        <article class="photo-card" data-category="details">
+          <img src="images/ferrari-badge-detail.jpg" alt="Ferrari badge detail">
+          <h3>Ferrari Badge</h3>
+          <p>Details</p>
+        </article>
+        <article class="photo-card" data-category="supercars">
+          <img src="images/lamborghini-murcielago-doors.jpg" alt="Lamborghini Murcielago with doors up">
+          <h3>Murciélago Doors</h3>
+          <p>Supercars</p>
+        </article>
+        <article class="photo-card" data-category="classics">
+          <img src="images/ferrari-murcielago-fronts.jpg" alt="Classic Ferrari and Lamborghini front ends">
+          <h3>Italian Pairing</h3>
+          <p>Classics</p>
+        </article>
+        <article class="photo-card" data-category="details">
+          <img src="images/gt3rs-wing-detail.jpg" alt="Porsche GT3 RS wing detail">
+          <h3>GT3 RS Wing</h3>
+          <p>Details</p>
+        </article>
+        <article class="photo-card" data-category="supercars">
+          <img src="images/white-sports-car-sunflare.jpg" alt="White sports car with sun flare">
+          <h3>Sunflare Side</h3>
+          <p>Supercars</p>
+        </article>
+        <article class="photo-card" data-category="jdm">
+          <img src="images/yellow-civic-type-r.jpg" alt="Yellow Honda Civic Type R">
+          <h3>Civic Type R</h3>
+          <p>JDM</p>
+        </article>
+        <article class="photo-card" data-category="classics">
+          <img src="images/renault-5-turbo-rally.jpg" alt="Renault 5 Turbo rally car">
+          <h3>Renault 5 Turbo</h3>
+          <p>Classics</p>
+        </article>
+        <article class="photo-card" data-category="supercars">
+          <img src="images/aston-martin-vantage.jpg" alt="Aston Martin Vantage">
+          <h3>Aston Vantage</h3>
+          <p>Supercars</p>
+        </article>
+        <article class="photo-card" data-category="supercars">
+          <img src="images/green-mclaren-sunset.jpg" alt="Green McLaren at sunset">
+          <h3>McLaren Sunset</h3>
+          <p>Supercars</p>
+        </article>
+        <article class="photo-card" data-category="motorsport">
+          <img src="images/ferrari-gt3-track.jpg" alt="Ferrari GT3 car on track">
+          <h3>Ferrari Track Motion</h3>
+          <p>Motorsport</p>
+        </article>
+        <article class="photo-card" data-category="details">
+          <img src="images/carbon-detail-racing.jpg" alt="Carbon fibre racing detail">
+          <h3>Carbon Fibre</h3>
+          <p>Details</p>
         </article>
       </div>
     </section>
@@ -85,47 +141,41 @@
     <section id="shop" class="section shop-section">
       <div class="section-heading">
         <p class="eyebrow">Shop</p>
-        <h2>Start simple</h2>
+        <h2>Prints & downloads</h2>
       </div>
 
       <div class="shop-grid">
         <article class="shop-card">
           <h3>Phone Wallpaper</h3>
           <p class="price">$3 AUD</p>
-          <p>Vertical crop for iPhone and Android lock screens.</p>
+          <p>Vertical crop for phone lock screens.</p>
           <a class="button secondary" href="#contact">Request</a>
         </article>
-        <article class="shop-card featured">
+        <article class="shop-card featured-shop">
           <h3>Desktop Wallpaper</h3>
           <p class="price">$7 AUD</p>
-          <p>High-resolution photo for laptop and monitor backgrounds.</p>
+          <p>High-resolution wallpaper for laptops and monitors.</p>
           <a class="button primary" href="#contact">Request</a>
         </article>
         <article class="shop-card">
-          <h3>A3 Print</h3>
-          <p class="price">$25 AUD</p>
-          <p>Poster-style print concept. Add fulfilment later.</p>
+          <h3>Prints</h3>
+          <p class="price">From $25</p>
+          <p>A4 and A3 poster-style prints. Coming soon.</p>
           <a class="button secondary" href="#contact">Request</a>
         </article>
       </div>
     </section>
 
-    <section id="about" class="section split">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2>Built by a Sydney car photographer.</h2>
-      </div>
-      <p>
-        X on Wheels is a place for automotive photos from Sydney car events,
-        street spots and private shoots. This first version is designed to test
-        interest before paying for a full ecommerce platform.
-      </p>
+    <section class="section about">
+      <p class="eyebrow">About</p>
+      <h2>X on Wheels</h2>
+      <p>X on Wheels is a Sydney-based automotive photography project focused on car meets, rare builds, supercars, classics, motorsport and the small details that make each car unique.</p>
     </section>
 
     <section id="contact" class="section contact">
       <p class="eyebrow">Contact</p>
-      <h2>Want a photo or private shoot?</h2>
-      <p>Message me on Instagram or email for wallpapers, prints and bookings.</p>
+      <h2>Want a photo, wallpaper or private shoot?</h2>
+      <p>Message me on Instagram or send an email.</p>
       <div class="contact-links">
         <a class="button primary" href="https://www.instagram.com/x_on_wheels/" target="_blank" rel="noopener">Instagram</a>
         <a class="button secondary" href="mailto:xavier.munce@outlook.com">Email</a>
@@ -133,10 +183,13 @@
     </section>
   </main>
 
-  <footer>
-    <p>© 2026 X on Wheels. Automotive photography by Xavier Munce.</p>
-  </footer>
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" aria-label="Close image">×</button>
+    <img id="lightbox-image" src="" alt="">
+    <p id="lightbox-caption"></p>
+  </div>
 
+  <footer><p>© 2026 X on Wheels. Automotive photography by Xavier Munce.</p></footer>
   <script src="script.js"></script>
 </body>
 </html>
